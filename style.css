@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+header .language-selector .lang {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+header .language-selector .lang:hover {
+    text-decoration: underline;
+}
+
+#product {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+.product-card {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+}
+
+.image-slider {
+    position: relative;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.product-card .description {
+    font-size: 1.1em;
+    margin: 20px auto;
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.product-card .features {
+    text-align: left;
+    list-style: disc;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #00bcd4;
+}
+
+.product-card .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #00bcd4;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: #008c9e;
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    background-color: #111;
+    margin-top: 20px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
